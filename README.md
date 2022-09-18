@@ -32,7 +32,7 @@ So given John Jacob Jingleheimer Schmidt
                         // replacing John
 ### cout << fullName << endl; // prints  Jacob Jingleheimer Schmidt
 ### Solution
-Remove the cin >> fullName;
+                        Remove the cin >> fullName;
 
 ### getline(cin, fullName); // reads John Jacob Jingleheimer Schmidt into fullname, 
 ### cout << fullName << endl; // prints John Jacob Jingleheimer Schmidt
