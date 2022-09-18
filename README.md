@@ -18,20 +18,21 @@ In the following example, we shall include algorithm header file and use reverse
 
 # (String) Full line taking as input
 
-cin >> fullName;
+### string fullName;
+### cin >> fullName;
 reads the first word of the full name.
 
-getline(cin, fullName);
+### getline(cin, fullName);
 reads the rest of the name over top of the first word. Computer programs do exactly what you tell them to do and show somewhat less than zero mercy if that's the wrong thing to do.
 
 So given John Jacob Jingleheimer Schmidt
 
-cin >> fullName; // reads John into fullname
-getline(cin, fullName); // reads  Jacob Jingleheimer Schmidt into fullname, 
+### cin >> fullName; // reads John into fullname
+### getline(cin, fullName); // reads  Jacob Jingleheimer Schmidt into fullname, 
                         // replacing John
-cout << fullName << endl; // prints  Jacob Jingleheimer Schmidt
-Solution
+### cout << fullName << endl; // prints  Jacob Jingleheimer Schmidt
+### Solution
 Remove the cin >> fullName;
 
-getline(cin, fullName); // reads John Jacob Jingleheimer Schmidt into fullname, 
-cout << fullName << endl; // prints John Jacob Jingleheimer Schmidt
+### getline(cin, fullName); // reads John Jacob Jingleheimer Schmidt into fullname, 
+### cout << fullName << endl; // prints John Jacob Jingleheimer Schmidt
