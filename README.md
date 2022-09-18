@@ -14,16 +14,5 @@ Quicksort is a divide and conquer algorithm. Quicksort first divides a large lis
 reverse() is a function in algorithm header file used to reverse a sequence in the given range.
 In the following example, we shall include algorithm header file and use reverse() function. Pass the beginning and ending of the string as arguments to reverse() function as shown in the program. This process reverses the string in-place.
 ### C++ Program
+![image](https://user-images.githubusercontent.com/26576892/190890324-34b247cd-a96a-4657-a008-16907c8ab4bd.png)
 
-#include <iostream> 
-#include <algorithm>  
-using namespace std;
- 
-int main() {
-   string str = "And still, I rise.";
-   reverse(str.begin(), str.end());
-   cout << str << endl;
-}
-Output
-
-.esir I ,llits dnA
