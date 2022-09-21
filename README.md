@@ -103,7 +103,7 @@ Syntax:
                         vector<object_type> vector_name_2(vector_name_1.begin(),vector_name_1.end())
 ````
 ## Various Functions in Vectors are
-### Iterators:
+## Iterators:
 
 ### begin() –  It returns an iterator pointing to the first element in the vector.
 ### end() – It returns an iterator pointing to the last element in the vector.
