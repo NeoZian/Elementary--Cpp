@@ -102,3 +102,15 @@ Syntax:
                         vector<object_type> vector_name_1{val1,val2,…,valn};
                         vector<object_type> vector_name_2(vector_name_1.begin(),vector_name_1.end())
 ````
+## Various Functions in Vectors are
+### Iterators:
+
+### begin() –  It returns an iterator pointing to the first element in the vector.
+### end() – It returns an iterator pointing to the last element in the vector.
+### rbegin() – It returns a reverse iterator pointing to the last element in the vector.
+### rend() – It returns a reverse iterator pointing to the element preceding the first element in the vector. Basically considered as a reverse end.
+### cbegin() – It returns a constant iterator pointing to the first element in the vector.
+### cend() – It returns a constant iterator pointing to the element that follows the last element in the vector.
+### crbegin() – It returns a constant reverse iterator pointing to the last element in the vector.
+### crend() – It returns a constant reverse iterator pointing to the element preceding the first element in the vector.
+### Example Code for Visualizing the use of Iterators:
