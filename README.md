@@ -150,3 +150,7 @@ int main()
     return 0; 
 } 
 ```
+### output:
+![image](https://user-images.githubusercontent.com/26576892/191549594-4a6a3487-dd06-45fb-bed6-d4d8a55703f1.png)
+
+
