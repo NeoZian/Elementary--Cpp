@@ -260,11 +260,8 @@ int main()
 }
 ```
 ### Output:
-  Reference operator [g] : g1[2] = 30
-  at : g1.at(4) = 50
-  front() : g1.front() = 10
-  back() : g1.back() = 100
-  The first element is 10
+ ![image](https://user-images.githubusercontent.com/26576892/191591461-51b9f924-c5f7-4cfc-8b6d-f1a61b270056.png)
+
   
   
   ## Modifiers: 
@@ -278,7 +275,7 @@ swap() – It is used to swap the contents of one vector with another vector of 
 clear() – It is used to remove all the elements of the vector container
 emplace() – It extends the container by inserting new element at position
 emplace_back() – It is used to insert a new element into the vector container, the new element is added to the end of the vector
-
+```
 // C++ program to illustrate the
 // Modifiers in vector
 #include <bits/stdc++.h>
@@ -359,28 +356,18 @@ int main()
     for (int i = 0; i < v2.size(); i++)
         cout << v2[i] << " ";
 }
-Output:
-The vector elements are: 10 10 10 10 10 
-The last element is: 15
-The vector elements are: 10 10 10 10 10 
-The first element is: 5
-The first element is: 10
-The first element is: 5
-The last element is: 20
-Vector size after erase(): 0
+```
+### Output:
+![image](https://user-images.githubusercontent.com/26576892/191591852-27d8fff8-b160-448d-9a43-35b23c1ff2f0.png)
 
-Vector 1: 1 2 
-Vector 2: 3 4 
-After Swap 
-Vector 1: 3 4 
-Vector 2: 1 2
-The time complexity for doing various operations on vectors is-
 
-Random access – constant O(1)
-Insertion or removal of elements at the end – constant O(1)
-Insertion or removal of elements – linear in the distance to the end of the vector O(N)
-Knowing the size – constant O(1)
-Resizing the vector- Linear O(N)
+## The time complexity for doing various operations on vectors is-
+
+### Random access – constant O(1)
+### Insertion or removal of elements at the end – constant O(1)
+### Insertion or removal of elements – linear in the distance to the end of the vector O(N)
+### Knowing the size – constant O(1)
+### Resizing the vector- Linear O(N)
 
 
 
