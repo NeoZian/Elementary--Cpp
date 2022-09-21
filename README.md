@@ -59,13 +59,17 @@ Vectors are not ordered in C++. Vector elements are placed in adjacent storage a
 
 # Declaration of Vectors in C++
 It is mandatory to include 
+````
                         #include<vector> 
+                        ````
   library before using vectors in C++.
 
 For Vector declaration we need to follow the below syntax:
 
 1
+  ````
                         vector< object_type > vector_variable_name;
+  ````
 Initialization of Vectors
 Pushing the values one-by-one in vector using push_back():
 All the elements that need to be stored in the vector are pushed back one-by-one in the vector using the push_back() method. 
