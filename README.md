@@ -61,7 +61,7 @@ Vectors are not ordered in C++. Vector elements are placed in adjacent storage a
 It is mandatory to include 
 ````
                         #include<vector> 
-                        ````
+````                       
   library before using vectors in C++.
 
 For Vector declaration we need to follow the below syntax:
