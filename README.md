@@ -75,23 +75,30 @@ Pushing the values one-by-one in vector using push_back():
 All the elements that need to be stored in the vector are pushed back one-by-one in the vector using the push_back() method. 
 Syntax:
 1
+````
                         vector_name.push_back(element_value);
+````                        
 Using the overload constructor of the vector Class:
 This method is used to populate a vector with multiple times the same value.
 Syntax:
 1
+````
                         vector<object_type> vector_name (number_of_repetition,element_value);
+````
 Using Array:
 This method uses array as a parameter to be passed in the vector constructor.
 Syntax:
 1
+````
                         vector<object_type> vector_name {val1,val2,val3,....,valn};
+````
 Using already initialized vector:
 This method uses an already created vector to create a new vector with the same values.
 This method passes the begin() and end() of an already initialized vector.
 
 |
 Syntax:
+````
                         vector<object_type> vector_name_1{val1,val2,…,valn};
                         vector<object_type> vector_name_2(vector_name_1.begin(),vector_name_1.end())
-
+````
