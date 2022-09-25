@@ -375,10 +375,9 @@ We have to include the two main header files to work with the sets.
 
   Instead of using the above two header files, we can also use only this one header file.
              This one header file contains all the header file , so we can only use this one header file ,     
+    instead of all the other header files .
 
-             instead of all the other header files .
-
-          #include< bits/stdc++.h >
+    #include< bits/stdc++.h >
  
 ### Some Basic Functions Related To Sets
 begin() :- 
@@ -392,7 +391,7 @@ Returns the maximum number of element that set can hold .
 Size() :- 
 Returns the number of elements in the set .
 ### Initialising a set in C++
-We define the type of values to be stored in a set at the time of its initialisation in C++. By default, the numeric values in a set are stored in increasing order. If we want to store in decreasing order, we can use * greater<int> * . We can initialise a set in multiple ways:
+We define the type of values to be stored in a set at the time of its initialisation in C++. By default, the numeric values in a set are stored in increasing order. If we want to store in decreasing order, we can use `greater<int>` . We can initialise a set in multiple ways:
 
 Empty set
 Set with Values
