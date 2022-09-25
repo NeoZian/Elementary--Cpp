@@ -392,7 +392,7 @@ Returns the maximum number of element that set can hold .
 Size() :- 
 Returns the number of elements in the set .
 ### Initialising a set in C++
-We define the type of values to be stored in a set at the time of its initialisation in C++. By default, the numeric values in a set are stored in increasing order. If we want to store in decreasing order, we can use *greater<int>*. We can initialise a set in multiple ways:
+We define the type of values to be stored in a set at the time of its initialisation in C++. By default, the numeric values in a set are stored in increasing order. If we want to store in decreasing order, we can use * greater<int> * . We can initialise a set in multiple ways:
 
 Empty set
 Set with Values
