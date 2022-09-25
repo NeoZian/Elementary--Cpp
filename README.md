@@ -361,7 +361,93 @@ int main()
 ### Knowing the size – constant O(1)
 ### Resizing the vector- Linear O(N)
 
+ # Set in C++
+ 
+### When to use sets?
+Sets are frequently used containers in competitive programming; whenever there is a need of storing the elements in a sorted manner, we can think of using the sets, but remember that the set does not allow us to store the duplicates value. The value can’t be modified once it is stored. 
 
+### Implementing sets
+Sets are traversed using the iterators. 
+We have to include the two main header files to work with the sets.
+#include< set >
+
+#include< iterator >
+
+  Instead of using the above two header files, we can also use only this one header file.
+             This one header file contains all the header file , so we can only use this one header file ,     
+
+             instead of all the other header files .
+
+          #include< bits/stdc++.h >
+ 
+### Some Basic Functions Related To Sets
+begin() :- 
+Returns an iterator to the first element of the set .
+end() :- 
+Returns an iterator to the theoretical element that follows last element in the set .
+Empty() :-
+check wheather the set is empty or not .
+max_size() :-
+Returns the maximum number of element that set can hold .
+Size() :- 
+Returns the number of elements in the set .
+### Initialising a set in C++
+We define the type of values to be stored in a set at the time of its initialisation in C++. By default, the numeric values in a set are stored in increasing order. If we want to store in decreasing order, we can use *greater<int>*. We can initialise a set in multiple ways:
+
+Empty set
+Set with Values
+Set initialised with another Set
+Set initialised with an Array.
+Here is an example to describe the initialisation and printing of a set in C++.
+```
+#include<iostream>
+#include<set>
+
+using namespace std;
+ 
+int main()
+{
+ 
+    // Empty Set
+    set<int> set1;
+    // set1 = {}
+ 
+    // Empty Set - Decreasing Order
+    set<int, greater<int>> set2;
+    // set2 = {} 
+ 
+    // Set with values
+    set<int, greater<int>> set3 = {6, 10, 5, 1};
+    // set3 = {10, 6, 5, 1}
+ 
+    // Initialize Set using other set
+    set<int, greater<int>> set4(set3);
+    // set4 = {10, 6, 5, 1} 
+ 
+    // Initializing a set from array
+    int arr[] = {10, 4, 5, 61};
+    set<int> set5(arr, arr+4);  // Since the array has four elements, thus arr+4 
+
+     // Defining iterator for the set
+    set<int> :: iterator it;
+
+    //Printing a set using for loop – (1)
+    for (auto it = set5.begin(); it!=set5.end();it++)
+    {
+        cout<<endl<<*it;
+    }
+    return 1;
+}
+```
+Output:
+
+4
+
+5
+
+10
+
+61
 
 
 
