@@ -566,11 +566,17 @@ s2.upper_bound(40) :
 ## Different Function of Set in C++ STL
 ## Function	Description
 **begin()** Returns an iterator to the first element in the set.
+
 **end()**	Returns an iterator to the theoretical element that follows the last element in the set.
+
 **rbegin()**	Returns a reverse iterator pointing to the last element in the container.
+
 **rend()**	Returns a reverse iterator pointing to the theoretical element right before the first element in the set container.
-**crbegin()**	Returns a constant iterator pointing to the last element in the container.
+
+**crbegin()**	Returns a constant iterator pointing to the last element in the container
+.
 **crend()**	Returns a constant iterator pointing to the position just before the first element in the container.
+
 **cbegin()**	Returns a constant iterator pointing to the first element in the container.
 **cend()**	Returns a constant iterator pointing to the position past the last element in the container.
 **size()**	Returns the number of elements in the set.
