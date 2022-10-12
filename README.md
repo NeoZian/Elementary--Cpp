@@ -636,96 +636,79 @@ Maps are associative containers that store elements in a mapped fashion. Each el
 **erase(const g)** – Removes the key-value ‘g’ from the map.
 **clear()** – Removes all the elements from the map
 
+map is a container that stores elements in key-value pairs. It's similar to collections in Java, associative arrays in PHP, or objects in JavaScript.
+
+## Here are the main benefits of using map:
+
+map only stores unique keys, and the keys themselves are in sorted order
+Because the keys are already in order, searching for an element is very fast
+There is only one value for every key
+Here is an example:
+
 ```
-// CPP Program to demonstrate the implementation in Map
-// divyansh mishra --> divyanshmishra101010
 #include <iostream>
-#include <iterator>
 #include <map>
+
 using namespace std;
+
+int main (){
+  map<char,int> first;
   
-int main()
-{
+  //initializing
+  first['a']=10;
+  first['b']=20;
+  first['c']=30;
+  first['d']=40;
   
-    // empty map container
-    map<int, int> gquiz1;
-  
-    // insert elements in random order
-    gquiz1.insert(pair<int, int>(1, 40));
-    gquiz1.insert(pair<int, int>(2, 30));
-    gquiz1.insert(pair<int, int>(3, 60));
-    gquiz1.insert(pair<int, int>(4, 20));
-    gquiz1.insert(pair<int, int>(5, 50));
-    gquiz1.insert(pair<int, int>(6, 50));
-      
-      gquiz1[7]=10;     // another way of inserting a value in a map
-     
-  
-    // printing map gquiz1
-    map<int, int>::iterator itr;
-    cout << "\nThe map gquiz1 is : \n";
-    cout << "\tKEY\tELEMENT\n";
-    for (itr = gquiz1.begin(); itr != gquiz1.end(); ++itr) {
-        cout << '\t' << itr->first << '\t' << itr->second
-             << '\n';
-    }
-    cout << endl;
-  
-    // assigning the elements from gquiz1 to gquiz2
-    map<int, int> gquiz2(gquiz1.begin(), gquiz1.end());
-  
-    // print all elements of the map gquiz2
-    cout << "\nThe map gquiz2 after"
-         << " assign from gquiz1 is : \n";
-    cout << "\tKEY\tELEMENT\n";
-    for (itr = gquiz2.begin(); itr != gquiz2.end(); ++itr) {
-        cout << '\t' << itr->first << '\t' << itr->second
-             << '\n';
-    }
-    cout << endl;
-  
-    // remove all elements up to
-    // element with key=3 in gquiz2
-    cout << "\ngquiz2 after removal of"
-            " elements less than key=3 : \n";
-    cout << "\tKEY\tELEMENT\n";
-    gquiz2.erase(gquiz2.begin(), gquiz2.find(3));
-    for (itr = gquiz2.begin(); itr != gquiz2.end(); ++itr) {
-        cout << '\t' << itr->first << '\t' << itr->second
-             << '\n';
-    }
-  
-    // remove all elements with key = 4
-    int num;
-    num = gquiz2.erase(4);
-    cout << "\ngquiz2.erase(4) : ";
-    cout << num << " removed \n";
-    cout << "\tKEY\tELEMENT\n";
-    for (itr = gquiz2.begin(); itr != gquiz2.end(); ++itr) {
-        cout << '\t' << itr->first << '\t' << itr->second
-             << '\n';
-    }
-  
-    cout << endl;
-  
-    // lower bound and upper bound for map gquiz1 key = 5
-    cout << "gquiz1.lower_bound(5) : "
-         << "\tKEY = ";
-    cout << gquiz1.lower_bound(5)->first << '\t';
-    cout << "\tELEMENT = " << gquiz1.lower_bound(5)->second
-         << endl;
-    cout << "gquiz1.upper_bound(5) : "
-         << "\tKEY = ";
-    cout << gquiz1.upper_bound(5)->first << '\t';
-    cout << "\tELEMENT = " << gquiz1.upper_bound(5)->second
-         << endl;
-  
-    return 0;
+   map<char, int>::iterator it;
+   for(it=first.begin(); it!=first.end(); ++it){
+      cout << it->first << " => " << it->second << '\n';
+   }
+   
+  return 0;
 }
+Output:
+
+a => 10
+b => 20
+c => 30
+d => 40
+
+
 
 ```
 
+## Creating a map object
+```
+map<string, int> myMap;
+```
 
+## Insertion
+Inserting data with insert member function.
+```
+myMap.insert(make_pair("earth", 1));
+myMap.insert(make_pair("moon", 2));
+
+```
+
+We can also insert data in std::map using operator [] i.e.
+```
+myMap["sun"] = 3;
+```
+
+## Accessing map elements
+
+To access map elements, you have to create iterator for it. Here is an example as stated before.
+```
+map<char, int>::iterator it;
+for(it=first.begin(); it!=first.end(); ++it){
+  cout << it->first << " => " << it->second << '\n';
+}
+```
+## When not to use a C++ map
+The map in C++ is a great fit for quickly looking up values by key. However, searching the contents of a map by value requires iterating through an entire map. If you want to be able to find values in a map, iterating through it can be slow as a map gets large.
+The Boost library offers a bi-directional map which performs better when searching for values often. This data structure isn’t included in the standard C++ library, so you’ll need to install the Boost library on each machine where you compile or run your program (dynamic linking), or alternatively include the Boost library inside your executable (static linking).
+If you find yourself needing to search a map by value in a relatively simple program, it may be that a map is the wrong object to use. Consider using a C++ vector, queue, stack or other data structure which might end up making the program more straightforward and more efficient.
 
 
 
