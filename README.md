@@ -687,7 +687,9 @@ map<string, int> myMap;
 Inserting data with insert member function.
 ```
 myMap.insert(make_pair("earth", 1));
-myMap.insert(make_pair("moon", 2));
+myMap.insert(make_pair("moon", 2));  //make_pair doesn't require to specify the types
+
+//or myMap.insert(pair<string,int>("moon", 2));
 
 ```
 
